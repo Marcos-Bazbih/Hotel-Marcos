@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --mainColor: gold;
+    --titleFont: 'Zen Tokyo Zoo', cursive;
+    --textFont: monospace;
+}
+@media screen and (max-width:768px) {
+    .hotelStaff{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+body{
+    background: url(../images/mainBackground.jpg);
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-attachment:fixed; 
+}
+.navbar-brand{
+    color: var(--mainColor) !important;
+}
+.active a{
+    color: var(--mainColor) !important;
+}
+ul li a{
+    font-family: var(--textFont) !important;
+    font-size: 20px !important;
+    color: white  !important;
+}
+a:hover{
+    color: var(--mainColor) !important;
+}
+main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.mainTitle {
+    margin: 20px;
+}
+span{
+    color: var(--mainColor);
+}
+h1 {
+    margin: 0;
+    font-family: var(--titleFont);
+    font-size: 70px;
+    color: white;
+    border-bottom: 2px solid white;
+    border-top: 2px solid transparent;
+    transition: 0.5s;
+}
+h1:hover{
+    color: var(--mainColor);
+    border-top: 2px solid white;
+    border-radius: 5%;
+}
+p{
+    color: white;
+    font-size: 30px;
+    font-family: var(--textFont);
+}
+.hotelStaff{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    width: 95%;
+    height: fit-content;
+    justify-content:space-evenly;
+    border-top: 2px solid var(--mainColor);
+    border-bottom: 2px solid var(--mainColor);
+    border-radius: 5%;
+}
+.hotelEmployee{
+    width: 13%;
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content:center;
+}
+.hotelEmployee img{
+    border-radius: 50%;
+    width: 100%;
+    height: 50%;
+    transition: 0.5s;
+}
+.hotelEmployee img:hover{
+    filter: brightness(140%);
+}
+.hotelEmployee h1{
+    font-size: 45px;
+    text-align: center;
+}
+.hotelEmployee p{
+    font-size: 26px;
+}
+.branchLocationInfo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.branchLocationInfo p:last-child{
+    background: yellow;
+    color: black;
+}
+.formSection{
+    margin-bottom: 20px;
+}
+form{
+    height: 300px;
+    background: var(--mainColor);
+    border-radius: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+button{
+    padding: 5px 15px;
+    font-size: 18px;
+    font-family:var(--textFont);
+    text-decoration: underline;
+}

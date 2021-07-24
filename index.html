@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Marcos Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css-styles/style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <div class="navbar-brand">Hotel Marcos</div>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="branch-Ashdod.html">Ashdod</a></li>
+          <li><a href="branch-Barcelona.html">Barcelona</a></li>
+          <li><a href="branch-London.html">London</a></li>
+          <li><a href="branch-Paris.html">Paris</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+      <h1 class="mainTitle"><span>H</span>otel <span>M</span>arcos</h1>
+      <section class="branches">
+        <article class="branchesInfo">
+          <img src="images/Barcelona-branch.jpeg" alt="BarcelonaBranch">
+        </article>
+        <article class="branchesInfo">
+          <h1><span>B</span>arcelona</h1>
+          <p>Hotel Marcos located in Barcelona, Spain.</p>
+          <a href="https://wa.me/972525046632" target="blank">contact us for reservations</a>
+        </article>
+      </section>
+      <section class="branches">
+        <article class="branchesInfo">
+          <img src="images/Ashdod-branch.jpg" alt="AshdodBranch">
+        </article>
+        <article class="branchesInfo">
+          <h1><span>A</span>shdod</h1>
+          <p>Hotel Marcos located in Ashdod, Israel.</p>
+          <a href="https://wa.me/972525046632" target="blank">contact us for reservations</a>
+        </article>
+      </section>
+      <section class="branches">
+        <article class="branchesInfo">
+          <img src="images/Paris-branch.jpg" alt="ParisBranch">
+        </article>
+        <article class="branchesInfo">
+          <h1><span>P</span>aris</h1>
+          <p>Hotel Marcos located in Paris, France</p>
+          <a href="https://wa.me/972525046632" target="blank">contact us for reservations</a>
+        </article>
+      </section>
+      <section class="branches">
+        <article class="branchesInfo">
+          <img src="images/London-branch.jpg" alt="LondonBranch">
+        </article>
+         <article class="branchesInfo">
+          <h1><span>L</span>ondon</h1>
+          <p>Hotel Marcos located in London, England.</p>
+          <a href="https://wa.me/972525046632" target="blank">contact us for reservations</a>
+        </article>
+      </section>
+        <h1 class="mainTitle"><span>N</span>ear <span>E</span>vents</h1>
+        <section class="eventsContainer">
+          <article class="eventsCard">
+            <img src="images/j cole.jpg" alt="J-cole">
+            <h1>J cole concert</h1>
+            <p>Hotel Marcos in Ashdod</p>
+            <p>25.7.21</p>
+            <p>Maximum capacity of 450 people</p>
+          </article>
+          <article class="eventsCard">
+            <img src="images/roof-party.jpg" alt="roof-party">
+            <h1>Roof party</h1>
+            <p>Hotel Marcos in Barcelona</p>
+            <p>6.8.21</p>
+            <p>Maximum capacity of 250 people</p>
+          </article>
+          <article class="eventsCard">
+            <img src="images/yacht-cruise.jpg" alt="yacht-cruise">
+            <h1>Yacht cruise</h1>
+            <p>Hotel Marcos in Paris</p>
+            <p>14.8.21</p>
+            <p>Maximum capacity of 350 people</p>
+          </article>
+          <article class="eventsCard">
+            <img src="images/golf.jpg" alt="golf">
+            <h1>Golf tournament</h1>
+            <p>Hotel Marcos in London</p>
+            <p>18.8.21</p>
+            <p>Maximum capacity of 120 people</p>
+          </article>
+        </section>
+        <section class="formSection">
+            <h1 class="mainTitle"><span>B</span>ook <span>N</span>ow</h1>
+            <form>
+              <label>Hotel branch</label>
+                <input list="branches" name="branches" required>
+                <datalist id="branches">
+                  <option value="Ashdod">
+                  <option value="Barcelona">
+                  <option value="London">
+                  <option value="Rome">
+                </datalist>
+              <label>Full name</label>
+              <input type="text" name="firstName" required>
+              <label>Entry date</label>
+              <input type="date" name="EntryDate" required min="2021-07-25">
+              <label>Exit date</label>
+              <input type="date" name="ExitDate" required max="2023-07-25">
+              <button>Book</button>
+            </form>
+        </section>
+  </main>
+  <footer></footer>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

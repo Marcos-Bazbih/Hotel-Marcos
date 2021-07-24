@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --mainColor: gold;
+    --titleFont: 'Zen Tokyo Zoo', cursive;
+    --textFont: monospace;
+}
+@media screen and (max-width:768px) {
+    .branchesInfo:first-child{
+        position: absolute;
+        left: -100%;
+    }
+    .eventsContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+body{
+    background: url(../images/mainBackground.jpg);
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-attachment:fixed; 
+}
+.navbar-brand{
+    color: var(--mainColor) !important;
+}
+.active a{
+    color: var(--mainColor) !important;
+}
+ul li a{
+    font-family: var(--textFont) !important;
+    font-size: 20px !important;
+    color: white  !important;
+}
+a:hover{
+    color: var(--mainColor) !important;
+}
+main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.mainTitle {
+    margin: 20px;
+}
+span{
+    color: var(--mainColor);
+}
+h1 {
+    margin: 0;
+    font-family: var(--titleFont);
+    font-size: 70px;
+    color: white;
+    border-bottom: 2px solid white;
+    border-top: 2px solid transparent;
+    transition: 0.5s;
+}
+h1:hover{
+    color: var(--mainColor);
+    border-top: 2px solid white;
+    border-radius: 5%;
+}
+p{
+    color: white;
+    font-size: 30px;
+    font-family: var(--textFont);
+}
+.branches{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 350px;
+    border: 2px solid white;
+}
+.branches:hover> .branchesInfo img{
+    filter:brightness(120%)
+}
+.branchesInfo:first-child{
+    width: 50%;
+}
+.branchesInfo:nth-child(2){
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 50%;
+}
+.branchesInfo img{
+    width: 60%;
+    height: 100%;
+    filter:brightness(50%);
+    transition: 1s;
+}
+.branchesInfo a{
+    font-size: 20px;
+    color: white;
+    text-decoration:none;
+    border-bottom: 2px solid white;
+    border-top: 2px solid transparent;
+    transition: 0.5s;
+}
+.branchesInfo a:hover{
+    border-top: 2px solid white;
+    border-radius: 10%;
+}
+.eventsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.eventsCard{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-between;
+    width: 22%;
+    margin: 1%;
+    border: 2px solid white;
+}
+.eventsCard img{
+    width: 100%;
+    height: 50%;
+}
+.eventsCard h1{
+    font-size: 45px;
+}
+.eventsCard p{
+    font-size: 20px;
+}
+.eventsCard p:last-child{
+    background: yellow;
+    color: black;
+}
+.formSection{
+    margin-bottom: 20px;
+}
+form{
+    height: 300px;
+    background: var(--mainColor);
+    border-radius: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+button{
+    padding: 5px 15px;
+    font-size: 18px;
+    font-family:var(--textFont);
+    text-decoration: underline;
+}

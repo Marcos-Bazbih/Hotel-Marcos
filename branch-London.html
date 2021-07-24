@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Marcos London</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css-styles/branch.css">
+</head>
+<body>
+    <header>
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <div class="navbar-brand">Hotel Marcos</div>
+          </div>
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="branch-Ashdod.html">Ashdod</a></li>
+            <li><a href="branch-Barcelona.html">Barcelona</a></li>
+            <li class="active"><a href="#">London</a></li>
+            <li><a href="branch-Paris.html">Paris</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+        <h1 class="mainTitle"><span>L</span>ondon</h1>
+        <section class="hotelStaff">
+            <article class="hotelEmployee">
+                <img src="images/hotelWorker-1.jpg" alt="">
+                <h1>Hotel Maid</h1>
+                <p>Cloe Perkins</p>
+            </article>
+            <article class="hotelEmployee">
+                <img src="images/hotelWorker-2.jpg" alt="">
+                <h1>Hotel Chef</h1>
+                <p>Ela Casey</p>
+            </article>
+            <article class="hotelEmployee">
+                <img src="images/hotelWorker-3.jpg" alt="">
+                <h1>Hotel Host</h1>
+                <p>Daniela Hahn</p>
+            </article>
+            <article class="hotelEmployee">
+                <img src="images/2pac_photo.jpg" alt="">
+                <h1>Hotel Manager</h1>
+                <p>Tupac Shakur</p>
+            </article>
+            <article class="hotelEmployee">
+                <img src="images/hotelWorker-4.jpg" alt="">
+                <h1>Hotel Bellman</h1>
+                <p>Kenny Mason</p>
+            </article>
+            <article class="hotelEmployee">
+                <img src="images/hotelWorker-5.jpg" alt="">
+                <h1>Hotel Porter</h1>
+                <p>Glen Kelly</p>
+            </article>
+            <article class="hotelEmployee">
+                <img src="images/hotelWorker-6.jpg" alt="">
+                <h1>Hotel Waiter</h1>
+                <p>Peter Kenny</p>
+            </article>
+        </section>
+        <h1 class="mainTitle"><span>H</span>otel <span>D</span>etails</h1>
+        <section class="branchLocationInfo">
+            <p>Hotel Marcos located in London, England</p>
+            <p>549$ for a night.</p>
+        </section>
+        <section class="formSection">
+            <h1 class="mainTitle"><span>B</span>ook <span>N</span>ow</h1>
+            <form>
+              <label>Hotel branch</label>
+              <input list="branches" name="branches" value="London" disabled>
+              <label>Full name</label>
+              <input type="text" name="firstName" required>
+              <label>Entry date</label>
+              <input type="date" name="EntryDate" required min="2021-07-25">
+              <label>Exit date</label>
+              <input type="date" name="ExitDate" required max="2023-07-25">
+              <button>Book</button>
+            </form>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
