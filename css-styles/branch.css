@@ -12,6 +12,9 @@
         flex-direction: column;
         align-items: center;
     }
+    .hotelStaff .hotelEmployee{
+        width:50%;
+    }
 }
 body{
     background: url(../images/mainBackground.jpg);
