@@ -19,6 +19,9 @@
         flex-direction: column;
         align-items: center;
     }
+    .branches{
+        padding:250px 200px;
+    }
 }
 body{
     background: url(../images/mainBackground.jpg);
