@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css-styles/style.css">
 </head>
 <body>
+  <img src="images/mainBackground.jpg" alt="mainBg" id="mainBg">
   <header>
     <nav class="navbar navbar-inverse">
       <div class="container-fluid">
@@ -105,13 +106,12 @@
             <h1 class="mainTitle"><span>B</span>ook <span>N</span>ow</h1>
             <form>
               <label>Hotel branch</label>
-                <input list="branches" name="branches" required>
-                <datalist id="branches">
-                  <option value="Ashdod">
-                  <option value="Barcelona">
-                  <option value="London">
-                  <option value="Rome">
-                </datalist>
+              <select>
+                <option value="Barcelona">Barcelona</option>
+                <option value="Ashdod">Ashdod</option>
+                <option value="Paris">Paris</option>
+                <option value="London">London</option>
+              </select>
               <label>Full name</label>
               <input type="text" name="firstName" required>
               <label>Entry date</label>

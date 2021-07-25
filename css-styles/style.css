@@ -4,6 +4,7 @@
 }
 :root{
     --mainColor: gold;
+    --goldGlassBackground: rgba(255, 217, 0, 0.61);
     --titleFont: 'Zen Tokyo Zoo', cursive;
     --textFont: monospace;
 }
@@ -22,9 +23,18 @@
     .branches{
         padding:250px 200px;
     }
+    #mainBg{
+        filter: brightness(20%) !important  ;   
+    }
+}
+#mainBg{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -10;
+    filter: brightness(40%);
 }
 body{
-    background: url(../images/mainBackground.jpg);
     background-repeat: no-repeat; 
     background-size: cover;
     background-attachment:fixed; 
@@ -74,7 +84,6 @@ p{
     font-family: var(--textFont);
 }
 .branches{
-    background: rgba(255, 255, 255, 0.144);
     display: flex;
     justify-content: center;
     width: 100%;
@@ -118,7 +127,6 @@ p{
     justify-content: center;
 }
 .eventsCard{
-    background: rgba(255, 255, 255, 0.144);
     display: flex;
     flex-direction: column;
     align-items:center;
@@ -146,8 +154,8 @@ p{
 }
 form{
     height: 300px;
-    background: var(--mainColor);
-    border-radius: 25%;
+    background: var(--goldGlassBackground);
+    border-radius: 15%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
