@@ -61,6 +61,15 @@ main{
 .mainTitle{
     margin: 20px;
 }
+.homePageTitle{
+    animation-name: mainTitle;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+@keyframes mainTitle {
+    0% {transform:scale(0%);}
+    100% {transform:scale(100%);}
+}
 span{
     color: var(--mainColor);
 }
@@ -91,7 +100,7 @@ p{
     border: 2px solid white;
 }
 .branches:hover> .branchesInfo img{
-    filter:brightness(120%)
+    filter:brightness(150%)
 }
 .branchesInfo:first-child{
     width: 50%;
@@ -106,7 +115,7 @@ p{
 .branchesInfo img{
     width: 60%;
     height: 100%;
-    filter:brightness(50%);
+    filter:brightness(70%);
     transition: 1s;
 }
 .branchesInfo a{
