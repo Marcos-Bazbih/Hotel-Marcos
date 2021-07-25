@@ -19,6 +19,9 @@
     #mainBg{
         filter: brightness(20%) !important  ;   
     }
+    .hotelStaff .hotelEmployee:nth-child(4){
+        order: -1;
+    }
 }
 #mainBg{
     width: 100%;
